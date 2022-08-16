@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <style>
+    body{
+      background-color: antiquewhite;
+    }
+    .tri button{
+      padding: 20px 100px;
+    }
+    .tri{
+      position: relative;
+      left: 20px;
+      top: 60px;
+    }
+    .box img{
+      height: 80px;
+      width: 100px;
+      position: relative;
+      left: 100px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar py-4 navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Devhouse</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="http://flipkat.com "
+                          target="_main">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://amazon.com" target="_main">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Topics
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item"
+                                  href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjdh7q_9cb5AhVujGgJHf47B4YYABABGgJ3Zg&ohost=www.google.com&cid=CAESbeD2ci-IyZQ_GQQY0fMvcrj6CPAMwd3TyqtrzOp8jkV9mlvqhHKPv3XRfh1ty7RFhoOevJYSFCHQ-isPOa99ZcaykKKLfge305kgvtxuZfcnheK7HqLZXnm9APUdQlWWpaNOi1ce4kOwqUKRXtk&sig=AOD64_23BohE_XmA5f8EZnmN8o0xJE15mQ&q&adurl&ved=2ahUKEwjvorC_9cb5AhWZhP0HHZICBf8Q0Qx6BAgDEAE"
+                                  target="_main">Technologies</a></li>
+                          <li><a class="dropdown-item" href="Http://w3school.com" target="_main">Libraries</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item"
+                                  href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7uu6j9cb5AhVG4ncKHft1DzUYABAAGgJlZg&ohost=www.google.com&cid=CAESbeD2H8uSnxpMFvZnTNsLMN7dzPRE0XiBg0jIGD_tFeCND7VW73xTEl0AlRQ5vLsE7PxUvo5gIQPgTKItyA3-vXPPU-zT3pjNaNTkATYDe_YTPMeBLdQRRcLBqNF522CHJLZBbkb1vv7ihWyTW2w&sig=AOD64_32uAeECY9oSNCDsIMx1RwbwSGdPQ&q&adurl&ved=2ahUKEwi59OWj9cb5AhVInf0HHQv0AdQQ0Qx6BAgDEAE"
+                                  target="_main">java script</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link"
+                          href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiN_-CZ9sb5AhUJ53cKHWX-DdsYABADGgJlZg&ohost=www.google.com&cid=CAESbeD2U93yGrl0AC099QhwXjFelPhWGIu3Iu5f7iPTwbbQxQBivq_1a4Vlg0WkDB4kR6gOoOAUj7zEOEt8cPo14V4T80rCf1faj4PCZ0AEkTihE34DNd24v2JDBYmD0dPKN2rgQMKfOxmu5P0uWQc&sig=AOD64_0fJvizIRy51X30qgIbEkhDIOjrGA&q&adurl&ved=2ahUKEwiQuteZ9sb5AhV9gv0HHfOSDcQQ0Qx6BAgDEAE"
+                          target="_main">Contents</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" type="sublit">Search</button>
+              </form>
+              <div class="mx-2">
+                  <button class="btn btn-warning" type="sublit" data-bs-toggle="modal" data-bs-toggle="modal"
+                      data-bs-target="#signupModal">Signup</button>
+                  <button class="btn btn-danger" type="sublit" data-bs-toggle="modal" data-bs-toggle="modal"
+                      data-bs-target="#LoginModal">Login</button>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2ppPmLWPIY4P1Qf8YIZbRw4hmtsxueKasA&usqp=CAU" alt="" width="72" height="57">
+      <h2>password correction page</h2>
+    <h2>
+      if you not remember about your password so click on this button for further processing 
+    </h2>
+<div class="tri">
+  <!-- < Button trigger modal  -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#anotherModal">
+  Launch demo modal
+</button>
+</div> 
+<!--another Modal-->
+<div class="modal fade" id="anotherModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="anotherModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

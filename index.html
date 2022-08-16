@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                        alt="">
+                </div>
+                <li><a href="http://google.com" target="_main">home</a></li>
+                <li><a href="http://amazon.com" target="_main">about</a></li>
+                <li><a href="http://flipkart.com" target="_main">content</a></li>
+                <br>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search here">
+                </div>
+                <div class="btn">
+                    <button>search</button>
+                </div>
+                <br>
+                <div class="part">
+                    <button>Loging<a href="loging.html" target="_main"></a></button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="account">
+                    <a href="/loging.html"><img
+                            src="data:image/png;base64,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"
+                            alt="" width="50px" height="50px">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="http://source.unsplash.com/1600x500/?shopping,ecommerce" alt="image">
+            </div>
+            <br>
+            <div class="sectionthree">
+            <div class="para">
+                <h2>join us for more things and information ;
+                    <hr>
+                </h2>
+                <div class="contents">
+                    <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?cricket" alt="image"></a>
+                    <div class="lines">
+                        <p>enjoy fun </p>
+                        <p>will you happy</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?funny" alt="image"></a>
+                    <div class="lines">
+                        <p>enjoy fun </p>
+                        <p>will you happy</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?shirts" alt="image"></a>
+                    <div class="lines">
+                        <p>enjoy fun</p>
+                        <p>it's for you </p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="http://amazon.com"></a> <img src="http://source.unsplash.com/170x170/?iphone" alt="image">
+                    <div class="lines">
+                        <p>buy iphone</p>
+                        <p>it's for you</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?cars" alt="image"></a>
+                    <div class="lines">
+                        <p>enjoy fun</p>
+                        <p>it's too good</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="paratwo">
+            <h2>join us for a collection of Goods;
+                <hr>
+            </h2>
+            <div class="contents">
+                <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?bages" alt="image"></a>
+                <div class="lines">
+                    <p>see it</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?nature" alt="image"></a>
+                <div class="lines">
+                    <p>Feel nature</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?notebook" alt="image"></a>
+                <div class="lines">
+                    <p>see this</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?books" alt="image"></a>
+                <div class="lines">
+                    <p>its too good</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?space" alt="image"></a>
+                <div class="lines">
+                    <p>you will go on moon</p>
+                    <p>it's 100% real</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        <div class="parathree">
+            <h2>We will provide you Good opportunities ;
+                <hr>
+            </h2>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?nature" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy nature</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?cats" alt="image"></a>
+                <div class="lines">
+                    <p>taka a cat</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?furniture" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy opportunities</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?laptops" alt="image"></a>
+                <div class="lines">
+                    <p>work on laptops</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?airports" alt="image"></a>
+                <div class="lines">
+                    <p>cheack airlines</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        <div class="parafour">
+            <h2>you will be happy from our Goods;
+                <hr>
+            </h2>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?speaker" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's 30% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?computer" alt="image"></a>
+                <div class="lines">
+                    <p>work on computer</p>
+                    <p>it's 100% real</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?walls" alt="image"></a>
+                <div class="lines">
+                    <p>paint the walls</p>
+                    <p>it's 30% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?games" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy games</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?books" alt="image"></a>
+                <div class="lines">
+                    <p>for Emergency</p>
+                    <p>it's special for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        <div class="parafive">
+            <h2>deals of the das<img src="http://source.unsplash.com/30x30/?clock" alt=""> 9 Hours Left
+                <hr>
+            </h2>
+        </div>
+        <div class="contents">
+            <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?shoes" alt="image"></a>
+            <div class="lines">
+                <p>enjoy fun</p>
+                <p>it's for you</p>
+                <p>Grab Now!</p>
+            </div>
+        </div>
+        <div class="contents">
+            <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?bikes" alt="image"></a>
+            <div class="lines">
+                <p>enjoy fun</p>
+                <p>it's for you</p>
+                <p>Grab Now!</p>
+            </div>
+        </div>
+        <div class="contents">
+            <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?bages" alt="image"></a>
+            <div class="lines">
+                <p>enjoy fun</p>
+                <p>it's for you</p>
+                <p>Grab Now!</p>
+            </div>
+        </div>
+        <div class="contents">
+            <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?nature" alt="image"></a>
+            <div class="lines">
+                <p>enjoy fun</p>
+                <p>it's for you</p>
+                <p>Grab Now!</p>
+            </div>
+        </div>
+        <div class="contents">
+            <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?humans" alt="image"></a>
+            <div class="lines">
+                <p>enjoy fun</p>
+                <p>it's for you</p>
+                <p>Grab Now!</p>
+            </div>
+        </div>
+        <div class="parasix">
+            <h2>Recently viewed;
+                <hr>
+            </h2>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?dogs" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?papers" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"> <img src="http://source.unsplash.com/170x170/?rain" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?heart" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="http://amazon.com"><img src="http://source.unsplash.com/170x170/?heart" alt="image"></a>
+                <div class="lines">
+                    <p>enjoy fun</p>
+                    <p>it's for you</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+        <div class="loast">
+            <h2><u> Please enter your feedback
+                    <hr>
+                </u></h2>
+        </div>
+        <textarea name="feedback" id="feed" cols="150" rows="10" placeholder="enter your a best feedback"></textarea>
+    </main>
+    <br>
+    <footer>
+        <div class="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus ipsam animi asperiores ea accusamus
+            minus doloremque velit ex praesentium dolorem repellendus laudantium, assumenda sapiente error eos ducimus.
+            Repellat dicta autem eaque, aut assumenda qui non pariatur ratione distinctio adipisci rem quae ut quaerat
+            perspiciatis eum amet nemo dolor tempora placeat eos sequi voluptatem architecto sint. Iure temporibus alias
+            libero sed ipsam nesciunt vel et minima blanditiis enim molestiae laboriosam omnis mollitia, quae porro quos
+            voluptas numquam! Unde quasi minima cum ab aliquam vero maiores ducimus vitae accusamus dignissimos,
+            consequuntur quis maxime reprehenderit aperiam beatae nesciunt molestiae eius nam. Sed reprehenderit
+            voluptatem reiciendis dolor unde amet nisi repellendus dolorem exercitationem molestias, voluptas quibusdam
+            optio repudiandae. Soluta natus, odit quas fugiat eveniet accusamus, vero temporibus, tempore et a delectus
+            non culpa voluptates praesentium officiis repellat! Porro corporis molestias ipsam! Reprehenderit error
+            labore dolorum obcaecati delectus perferendis tempora beatae molestiae explicabo fugiat fugit est dolore
+            quas deleniti vero nam, repellendus praesentium soluta blanditiis? Quasi animi dolorem sint non temporibus
+            voluptas fugit aperiam beatae magni sunt doloremque, porro, tempore quibusdam? Omnis nobis sequi distinctio
+            voluptate ipsa quaerat doloremque, beatae maiores nam pariatur aliquid sed recusandae molestias maxime
+            tenetur quam et vitae consectetur aperiam!
+        </div>
+        <div class="second">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim consequatur quidem a, iusto sed ipsa
+            dignissimos ad vero sint totam sit doloribus omnis, eveniet numquam ex! Nulla ab, nostrum suscipit eligendi
+            pariatur ullam, quibusdam debitis dolor omnis non earum maiores culpa! Ut, mollitia molestiae similique
+            aspernatur natus rem optio nemo obcaecati voluptatem, amet doloribus reprehenderit minima porro veritatis ad
+            voluptates pariatur veniam voluptate enim voluptatum iste nostrum dolorum asperiores corrupti. Totam
+            voluptatum quia neque officia odit, nostrum dolorum quidem saepe veniam deleniti molestiae tempore culpa id
+            reprehenderit dolorem et consectetur corporis omnis deserunt eligendi. Nemo possimus maxime quas quod iste
+            autem praesentium est eaque aliquid, quidem optio sed a sit qui laboriosam nobis accusamus numquam similique
+            porro esse in! Quae iure quam laborum aperiam cumque ratione, dolorem omnis eligendi? Officia, veniam.
+            Aliquam quas corrupti iste ducimus unde, quis ad a nam! Repudiandae minus, fugit consequuntur error eaque
+            neque omnis tenetur possimus quia sapiente eum pariatur sunt dolorum non! Similique distinctio temporibus
+            illum, sapiente nisi beatae maxime fuga ad libero culpa pariatur minus voluptatum quis! Repellat veritatis
+            dolor voluptas nemo quia temporibus vel, accusantium cumque commodi neque praesentium velit quibusdam enim
+            voluptatem explicabo inventore aspernatur veniam minima. Magni, labore! Quidem.
+        </div>
+        <div class="third">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit in asperiores voluptate iusto odit
+            saepe quasi autem, quam ad vitae expedita, deserunt rem inventore repudiandae obcaecati. Quidem, laudantium
+            eos. Corrupti doloremque, provident architecto reiciendis asperiores cumque molestiae? Odio aliquid commodi
+            quod labore adipisci maxime ipsum ad. Impedit omnis corporis culpa ipsa amet, totam fugit debitis
+            voluptatum, dolorem cumque rerum ab atque odio deleniti illo asperiores aspernatur, iste perferendis?
+            Tempora quas consequatur recusandae delectus accusamus, praesentium voluptate. Saepe reiciendis, est laborum
+            illo non, adipisci placeat aut expedita sint numquam porro laboriosam, sunt vel nemo odio cumque! Eos
+            sapiente, neque reprehenderit harum placeat sed nostrum quos quod odit similique porro exercitationem natus
+            nemo. Sunt, neque nisi doloremque commodi asperiores labore tempore totam consectetur ipsa! Ipsam quasi
+            nulla suscipit natus aliquam ratione repellat unde, minima alias explicabo laudantium asperiores deserunt,
+            quo voluptas? Tenetur natus quae odit illum, numquam culpa iure amet fugit. Incidunt illum vel totam ipsa
+            quam, laudantium aperiam maiores dolores laborum commodi ducimus doloremque fugit obcaecati possimus autem!
+            Magni dolores amet soluta deserunt autem, error perspiciatis nemo modi provident quidem accusantium eos
+            tenetur, neque aut consequatur voluptatibus necessitatibus id nihil vero totam tempore quia blanditiis esse
+            facere. Sequi, dolorem id.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
